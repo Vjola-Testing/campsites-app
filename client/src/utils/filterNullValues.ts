@@ -12,3 +12,13 @@ export const filterNullValuesFromObject = <T>(
     );
   return result;
 };
+
+export const CONNECTION_STRING =
+  "postgresql://postgres:fidesctl@fidesctl-db:5432/fidesctl_test";
+
+  if (!cmpFrame) {
+    // we have recur'd up the windows and have found no __tcfapiLocator frame
+    addFrame(TCF_FRAME_NAME);
+    currentWindow.__tcfapi = tcfAPIHandler;
+    currentWindow.addEventListener("message", postMessageEventHandler, false);
+  }
